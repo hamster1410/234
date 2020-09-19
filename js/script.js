@@ -186,3 +186,4 @@ personalMovieDB.movies[c] = d;
 console.log(numberOfFilms);
 console.log(personalMovieDB);
 
+// кнаконец то зарабботал тупой git!!!!
