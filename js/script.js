@@ -161,7 +161,7 @@ console.log(isChecked || isClose);
 
 
 //Практика 1/////////////////////////////////////////////////////////////////////////////////////
-
+/*
 let numberOfFilms = [];
 
 
@@ -187,3 +187,151 @@ console.log(numberOfFilms);
 console.log(personalMovieDB);
 
 // кнаконец то зарабботал тупой git!!!!
+
+*/
+
+//Условия/////////////////////////////////////////////////////////////////////////////////////
+/*
+if (4 == 9) {
+    console.log('OK');
+} else {
+    console.log('notOK');
+}
+
+const num =50;
+
+if (num < 49) {
+    console.log('Error');
+} else if (num > 100) {
+    console.log('toMuch');
+} else {
+    console.log('OR');
+}
+
+
+
+// тернарный оператор
+(num ===50) ? console.log('OR') : console.log('errr');
+
+//бинарный оператор 4 + 4
+// унарный оператор +4
+
+// switch
+switch (num) {
+    case 49:
+        console.log('неверно');
+        break;
+    case 100:
+        console.log('неверно');
+        break;
+    case 50:
+        console.log('верно');
+        break;
+    default:
+        console.log('не в этот раз');
+        break;
+};
+
+*/
+
+
+//Цикл/////////////////////////////////////////////////////////////////////////////////////
+/*
+let num = 50;
+
+while (num < 55) {
+    console.log(num);
+    num++;
+}
+
+// let num = 50;
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num < 55);
+
+// цикл for
+
+for (let i = 1; i < 10; i++) {
+    console.log(i ===6);
+    break;
+    //continue - пропускает 6 и идет дальше
+    // console.log(num);
+    // num++;
+};
+
+*/
+
+/////Функция  ///////////////////////////////////////////////////////////////////////////////////////
+/*
+let num = 30;
+
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 20;
+    console.log(num);
+}
+
+showFirstMessage('hello word');
+console.log(num);
+
+function calc(a, b) {
+    return (a + b);
+}
+
+console.log(calc(5, 10));
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+//класификация функций
+// function declaration - создается до начала выполнения скрипта, можно вызвать перед объявлением
+        //function foo () {}
+// function expression -создается только тогда, когда доходит поток кода, вызывается после объявления
+        // let foo=function() {};
+
+const logger = function() {
+    console.log('hello');
+};
+logger();
+
+// стрелочные функции ()=> не имеет своего контекста (this)
+const calc = (a, b) => { return a + b }; //  если код в 1 строчку, то можно const calc = (a, b) => a + b ;
+*/
+
+/////методы и свойства строк и чисел  ////////////////////////////////////////////////////////////////////////////
+
+const str = 'test';
+
+console.log(str.length);
+
+console.log(str[2]);
+console.log(str.toUpperCase());
+
+console.log(str);
+
+let fruit = 'Some fruit';
+
+console.log(fruit.indexOf("fruit"));
+
+
+const logg = "Hello world";
+
+console.log(logg.slice(6, 11));
+
+console.log(logg.substring(6, 11)); //=slice
+
+console.log(logg.substr(6, 2)); // от до сколько символов
+
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = '12.2px';
+console.log(parseInt(test)); // метод преодразует в числовой вид данных (целое)
+console.log(parseFloat(test)); // метод преодразует в числовой вид данных (дробное)
